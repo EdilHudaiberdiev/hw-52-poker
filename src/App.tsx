@@ -1,10 +1,17 @@
 import './App.css'
-import Card from "./lib/Card.tsx";
+import CardDeck from "./lib/CardDeck.ts";
 
-const App = () => (
-    <div className="playingCards">
-        <Card suit="hvghvg" rank="fghghj"/>
-    </div>
-);
+let cardDeck = new CardDeck();
+console.log(cardDeck.getCards(5));
+const App = () => {
+    console.log(cardDeck);
+    return (
+        <div className="playingCards">
+
+        </div>
+    );
+};
+
+
 
 export default App
