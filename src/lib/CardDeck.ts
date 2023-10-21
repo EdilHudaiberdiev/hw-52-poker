@@ -35,8 +35,10 @@ class CardDeck {
         const cards: CardInterface[] = [];
 
         for (let i = 0; i < howMany; i++) {
-           let card = this.getCard();
-           cards.push(card);
+            if (this.cardDeck.length > 0) {
+                let card = this.getCard();
+                cards.push(card);
+            }
         }
 
         return cards;
